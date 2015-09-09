@@ -18,7 +18,7 @@ def Maper_struc(file_comp):
     file = file_comp[1].strip().split('ENDMDL')
     filename = file_comp[0]
     filename = os.path.basename(filename)
-    filename = filename.replace(".log","")
+    filename = filename.replace(".pdbqt","")
     for line in file:
         if(len(line) > 0):
             words = line.split()
